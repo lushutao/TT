@@ -1,0 +1,62 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:9090
+secret: ""
+Proxy:
+  - name: V2_LST_BWG US
+    type: vmess
+    server: 67.230.177.112
+    port: "19177"
+    uuid: 438e707e-702d-461e-b908-e0ac7cf9c744
+    alterId: "64"
+    cipher: auto
+  - name: V2_A_Dmit
+    type: vmess
+    server: 103.117.103.26
+    port: "13143"
+    uuid: efeb762c-db41-4bca-822a-1a166fedec1a
+    alterId: "64"
+    cipher: auto
+  - name: V2_QT04_Dmit
+    type: vmess
+    server: 193.110.202.19
+    port: "32437"
+    uuid: 55aa5073-66e2-478a-a636-02f98d9b4cc9
+    alterId: "64"
+    cipher: auto
+  - name: V2_LST_Dmit
+    type: vmess
+    server: lstvpn.xyz
+    port: "38171"
+    uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca
+    alterId: "64"
+    cipher: auto
+    network: ws
+    ws-path: /abc/123
+    
+  - name: SS_Dmit_A+
+    type: ss
+    server: lushutao.cn
+    port: "54263"
+    cipher: chacha20-ietf-poly1305
+    password: NEzY3kPA73J7
+    
+Proxy Group:
+  - name: Proxy
+    type: select
+    proxies:
+      - V2_LST_BWG US
+      - V2_A_Dmit
+      - V2_QT04_Dmit
+      - V2_LST_Dmit
+      - SS_Dmit_A+
+Rule:
+  - DOMAIN-SUFFIX,google.com,Proxy
+  - DOMAIN-KEYWORD,google,Proxy
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - GEOIP,CN,DIRECT
+  - FINAL,,Proxy
