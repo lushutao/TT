@@ -1,0 +1,47 @@
+#	微信：  358553526
+#	自己搭建安全稳定
+#	  LST 自己使用
+#----------------------------------------#
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:9090
+secret: "lst"
+
+dns:
+  enable: true
+  ipv6: false
+  # listen: 0.0.0.0:53
+  # enhanced-mode: redir-host
+  nameserver:
+     - 1.2.4.8
+     - 114.114.114.114
+     - 223.5.5.5
+     - tls://dns.rubyfish.cn:853
+     - tls://dns.google
+
+Proxy:
+ #V2ray 系列
+- { name: "V2_LST_Dmit", type: vmess, server: 103.117.101.186, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: auto, network: ws, ws-path: /abc/123 }
+- { name: "V2_LST_BWG US", type: vmess, server: 67.230.177.112, port: 19177, uuid: 438e707e-702d-461e-b908-e0ac7cf9c744, alterId: 64, cipher: auto }
+- { name: "V2_A_Dmit", type: vmess, server: 103.117.103.26, port: 13143, uuid: efeb762c-db41-4bca-822a-1a166fedec1a, alterId: 64, cipher: auto }
+- { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: auto }
+
+Proxy Group:
+  - name: Proxy
+    type: select
+    proxies:
+      - V2_LST_BWG US
+      - V2_A_Dmit
+      - V2_LST_Dmit
+      - V2_LST_QT05
+
+Rule:
+  - DOMAIN-SUFFIX,google.com,Proxy
+  - DOMAIN-KEYWORD,google,Proxy
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - GEOIP,CN,DIRECT
+  - FINAL,,Proxy
