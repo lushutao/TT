@@ -36,7 +36,7 @@ Proxy Group:
 - { name: "Netflix", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
 
 Rule:
- #  LST/VPN 自定义系列
+ #LST/VPN 自定义系列
   - DOMAIN-SUFFIX,google.com,Auto
   - DOMAIN-KEYWORD,google,Auto
   - DOMAIN-KEYWORD,google,Auto
