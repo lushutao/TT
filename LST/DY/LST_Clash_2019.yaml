@@ -31,17 +31,24 @@ Proxy:
 - { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: auto }
 
 Proxy Group:
-  - name: Proxy
-    type: select
-    proxies:
-      - V2_LST_BWG US
-      - V2_A_Dmit
-      - V2_LST_Dmit
-      - V2_LST_QT05
+Proxy:
+ #V2ray 系列
+- { name: "V2_LST_Dmit", type: vmess, server: 103.117.101.186, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: auto, network: ws, ws-path: /abc/123 }
+- { name: "V2_LST_BWG US", type: vmess, server: 67.230.177.112, port: 19177, uuid: 438e707e-702d-461e-b908-e0ac7cf9c744, alterId: 64, cipher: auto }
+- { name: "V2_A_Dmit", type: vmess, server: 103.117.103.26, port: 13143, uuid: efeb762c-db41-4bca-822a-1a166fedec1a, alterId: 64, cipher: auto }
+- { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: auto }
+
+Proxy Group:
+- { name: "auto", type: url-test, proxies: ["V2_LST_Dmit", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
+- { name: "Proxy", type: fallback, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
+- { name: "netflix", type: fallback, proxies: ["V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
 
 Rule:
-  - DOMAIN-SUFFIX,google.com,Proxy
+  - DOMAIN-SUFFIX,google.com,auto
   - DOMAIN-KEYWORD,google,Proxy
-  - DOMAIN-SUFFIX,ad.com,REJECT
-  - GEOIP,CN,DIRECT
-  - FINAL,,Proxy
+  - DOMAIN-SUFFIX,ad.com,auto
+  - DOMAIN-SUFFIX,netflix.com,netflix
+  - GEOIP,CN,Proxy
+  - FINAL,Proxy
+
+
