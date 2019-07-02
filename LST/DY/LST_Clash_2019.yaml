@@ -30,15 +30,22 @@ Proxy:
 - { name: "V2_A_Dmit", type: vmess, server: 103.117.103.26, port: 13143, uuid: efeb762c-db41-4bca-822a-1a166fedec1a, alterId: 64, cipher: auto }
 - { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: auto }
  #SS 系列
-- name: "V2_LST_QT04"
+- name: "SS_LST_QT04"
   type: ss
   server: 103.135.250.75
   port: 22598
   cipher: chacha20-ietf-poly1305
   password: "LTfyMQqhg2"
 
+- name: "SS_US_QT01"
+  type: ss
+  server: 107.182.181.152
+  port: 54473
+  cipher: chacha20
+  password: "pSDeZLr0ip"
+
 Proxy Group:
-- { name: "Auto", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "V2_LST_QT04"] }
+- { name: "Auto", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01"] }
 - { name: "Youtube", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
 - { name: "Netflix", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
 
