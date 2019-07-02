@@ -55,7 +55,7 @@ Rule:
 - DOMAIN-KEYWORD,google,Auto
 - DOMAIN-SUFFIX,ad.com,Auto
 - DOMAIN-KEYWORD,netflix.com,Netflix
-- DOMAIN-SUFFIX,youtube.com,Youtube
+- DOMAIN-KEYWORD,youtube.com,Youtube
 
 # 国内网站
 - DOMAIN-SUFFIX,cn,DIRECT
