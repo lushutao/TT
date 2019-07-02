@@ -25,7 +25,7 @@ dns:
 
 Proxy:
  #V2ray 系列
-- { name: "V2_LST_Dmit", type: vmess, server: 103.117.101.186, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: auto, network: ws, ws-path: /abc/123 }
+- { name: "V2_LST_Dmit HK", type: vmess, server: 103.117.101.186, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: auto, network: ws, ws-path: /abc/123 }
 - { name: "V2_LST_BWG US", type: vmess, server: 67.230.177.112, port: 19177, uuid: 438e707e-702d-461e-b908-e0ac7cf9c744, alterId: 64, cipher: auto }
 - { name: "V2_A_Dmit", type: vmess, server: 103.117.103.26, port: 13143, uuid: efeb762c-db41-4bca-822a-1a166fedec1a, alterId: 64, cipher: auto }
 - { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: auto }
@@ -38,7 +38,7 @@ Proxy:
   password: "LTfyMQqhg2"
 
 Proxy Group:
-- { name: "Auto", type: select, proxies: ["V2_LST_Dmit", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "V2_LST_QT04"] }
+- { name: "Auto", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "V2_LST_QT04"] }
 - { name: "Youtube", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
 - { name: "Netflix", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
 
@@ -50,11 +50,15 @@ Rule:
  #GEOIP：GEOIP数据库（国家代码）匹配
 
 #LST/VPN 自定义系列
-- DOMAIN-SUFFIX,google.com,Auto
-- DOMAIN-KEYWORD,google,Auto
-- DOMAIN-SUFFIX,ad.com,DIRECT
-- DOMAIN-KEYWORD,netflix.com,Netflix
-- DOMAIN-KEYWORD,youtube.com,Youtube
+- DOMAIN-SUFFIX,ad.com,Auto
+- DOMAIN-SUFFIX,google.com,Youtube
+- DOMAIN-KEYWORD,google,Youtube
+
+- DOMAIN-SUFFIX,netflix.com,Netflix
+- DOMAIN-KEYWORD,netflix,Netflix
+
+- DOMAIN-SUFFIX,youtube.com,Youtube
+- DOMAIN-KEYWORD,youtube,Youtube
 
 # 国内网站
 - DOMAIN-SUFFIX,cn,DIRECT
@@ -189,4 +193,3 @@ Rule:
 - DOMAIN-SUFFIX,cn,DIRECT
 - GEOIP,CN,DIRECT
 - FINAL,Auto
-- MATCH,Auto
