@@ -52,8 +52,7 @@ Rule:
 #LST/VPN 自定义系列
 - DOMAIN-SUFFIX,google.com,Auto
 - DOMAIN-KEYWORD,google,Auto
-- DOMAIN-KEYWORD,google,Auto
-- DOMAIN-SUFFIX,ad.com,Auto
+- DOMAIN-SUFFIX,ad.com,DIRECT
 - DOMAIN-KEYWORD,netflix.com,Netflix
 - DOMAIN-KEYWORD,youtube.com,Youtube
 
