@@ -45,9 +45,9 @@ Proxy:
   password: "pSDeZLr0ip"
 
 Proxy Group:
-- { name: "Auto", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01"] }
-- { name: "Youtube", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
-- { name: "Netflix", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
+- { name: "🍒 Auto", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01"] }
+- { name: "📺 👉🏻Youtube", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
+- { name: "😃 👉🏻 📺Netflix", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
 
 Rule:
  #DomainSuffix：域名后缀匹配
@@ -57,15 +57,16 @@ Rule:
  #GEOIP：GEOIP数据库（国家代码）匹配
 
 #LST/VPN 自定义系列
-- DOMAIN-SUFFIX,ad.com,Auto
-- DOMAIN-SUFFIX,google.com,Youtube
-- DOMAIN-KEYWORD,google,Youtube
+- DOMAIN-SUFFIX,ad.com,🍒 Auto
+- DOMAIN-SUFFIX,speedtest.net,🍒 Auto
+- DOMAIN-SUFFIX,google.com,📺 👉🏻Youtube
+- DOMAIN-KEYWORD,google,📺 👉🏻Youtube
 
-- DOMAIN-SUFFIX,netflix.com,Netflix
-- DOMAIN-KEYWORD,netflix,Netflix
+- DOMAIN-SUFFIX,netflix.com,😃 👉🏻 📺Netflix
+- DOMAIN-KEYWORD,netflix,😃 👉🏻 📺Netflix
 
-- DOMAIN-SUFFIX,youtube.com,Youtube
-- DOMAIN-KEYWORD,youtube,Youtube
+- DOMAIN-SUFFIX,youtube.com,📺 👉🏻Youtube
+- DOMAIN-KEYWORD,youtube,📺 👉🏻Youtube
 
 # 国内网站
 - DOMAIN-SUFFIX,cn,DIRECT
@@ -199,4 +200,4 @@ Rule:
 # 国内直接链接
 - DOMAIN-SUFFIX,cn,DIRECT
 - GEOIP,CN,DIRECT
-- FINAL,Auto
+- FINAL,🍒 Auto
