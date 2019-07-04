@@ -69,133 +69,291 @@ Rule:
 - DOMAIN-KEYWORD,youtube,📺 👉🏻Youtube
 
 # 国内网站
-- DOMAIN-SUFFIX,cn,DIRECT
-- DOMAIN-KEYWORD,-cn,DIRECT
-- DOMAIN-SUFFIX,126.com,DIRECT
-- DOMAIN-SUFFIX,126.net,DIRECT
-- DOMAIN-SUFFIX,127.net,DIRECT
-- DOMAIN-SUFFIX,163.com,DIRECT
-- DOMAIN-SUFFIX,360buyimg.com,DIRECT
-- DOMAIN-SUFFIX,36kr.com,DIRECT
-- DOMAIN-SUFFIX,acfun.tv,DIRECT
-- DOMAIN-SUFFIX,air-matters.com,DIRECT
-- DOMAIN-SUFFIX,aixifan.com,DIRECT
-- DOMAIN-SUFFIX,akamaized.net,DIRECT
-- DOMAIN-KEYWORD,alicdn,DIRECT
-- DOMAIN-KEYWORD,alipay,DIRECT
-- DOMAIN-KEYWORD,taobao,DIRECT
-- DOMAIN-SUFFIX,amap.com,DIRECT
-- DOMAIN-SUFFIX,autonavi.com,DIRECT
-- DOMAIN-KEYWORD,baidu,DIRECT
-- DOMAIN-SUFFIX,bdimg.com,DIRECT
-- DOMAIN-SUFFIX,bdstatic.com,DIRECT
-- DOMAIN-SUFFIX,bilibili.com,DIRECT
-- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
-- DOMAIN-SUFFIX,clouddn.com,DIRECT
-- DOMAIN-SUFFIX,cnbeta.com,DIRECT
-- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
-- DOMAIN-SUFFIX,cootekservice.com,DIRECT
-- DOMAIN-SUFFIX,csdn.net,DIRECT
-- DOMAIN-SUFFIX,ctrip.com,DIRECT
-- DOMAIN-SUFFIX,dgtle.com,DIRECT
-- DOMAIN-SUFFIX,dianping.com,DIRECT
-- DOMAIN-SUFFIX,douban.com,DIRECT
-- DOMAIN-SUFFIX,doubanio.com,DIRECT
-- DOMAIN-SUFFIX,duokan.com,DIRECT
-- DOMAIN-SUFFIX,easou.com,DIRECT
-- DOMAIN-SUFFIX,ele.me,DIRECT
-- DOMAIN-SUFFIX,feng.com,DIRECT
-- DOMAIN-SUFFIX,fir.im,DIRECT
-- DOMAIN-SUFFIX,frdic.com,DIRECT
-- DOMAIN-SUFFIX,g-cores.com,DIRECT
-- DOMAIN-SUFFIX,godic.net,DIRECT
-- DOMAIN-SUFFIX,gtimg.com,DIRECT
-- DOMAIN,cdn.hockeyapp.net,DIRECT
-- DOMAIN-SUFFIX,hongxiu.com,DIRECT
-- DOMAIN-SUFFIX,hxcdn.net,DIRECT
-- DOMAIN-SUFFIX,iciba.com,DIRECT
-- DOMAIN-SUFFIX,ifeng.com,DIRECT
-- DOMAIN-SUFFIX,ifengimg.com,DIRECT
-- DOMAIN-SUFFIX,ipip.net,DIRECT
-- DOMAIN-SUFFIX,iqiyi.com,DIRECT
-- DOMAIN-SUFFIX,jd.com,DIRECT
-- DOMAIN-SUFFIX,jianshu.com,DIRECT
-- DOMAIN-SUFFIX,knewone.com,DIRECT
-- DOMAIN-SUFFIX,le.com,DIRECT
-- DOMAIN-SUFFIX,lecloud.com,DIRECT
-- DOMAIN-SUFFIX,lemicp.com,DIRECT
-- DOMAIN-SUFFIX,licdn.com,DIRECT
-- DOMAIN-SUFFIX,linkedin.com,DIRECT
-- DOMAIN-SUFFIX,luoo.net,DIRECT
-- DOMAIN-SUFFIX,meituan.com,DIRECT
-- DOMAIN-SUFFIX,meituan.net,DIRECT
-- DOMAIN-SUFFIX,mi.com,DIRECT
-- DOMAIN-SUFFIX,miaopai.com,DIRECT
+#Microsoft
 - DOMAIN-SUFFIX,microsoft.com,DIRECT
-- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
-- DOMAIN-SUFFIX,miui.com,DIRECT
-- DOMAIN-SUFFIX,miwifi.com,DIRECT
-- DOMAIN-SUFFIX,mob.com,DIRECT
-- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,msecnd.net,DIRECT
+- DOMAIN-SUFFIX,msedge.net,DIRECT
 - DOMAIN-SUFFIX,office.com,DIRECT
-- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-SUFFIX,outlookmobile.com,DIRECT
+- DOMAIN-SUFFIX,sfx.ms,DIRECT
+- DOMAIN-SUFFIX,sharepoint.com,DIRECT
+- DOMAIN-SUFFIX,s-microsoft.com,DIRECT
+- DOMAIN-SUFFIX,visualstudio.com,DIRECT
+- DOMAIN-SUFFIX,windows.net,DIRECT
 - DOMAIN-KEYWORD,officecdn,DIRECT
-- DOMAIN-SUFFIX,oschina.net,DIRECT
-- DOMAIN-SUFFIX,ppsimg.com,DIRECT
-- DOMAIN-SUFFIX,pstatp.com,DIRECT
-- DOMAIN-SUFFIX,qcloud.com,DIRECT
-- DOMAIN-SUFFIX,qdaily.com,DIRECT
-- DOMAIN-SUFFIX,qdmm.com,DIRECT
-- DOMAIN-SUFFIX,qhimg.com,DIRECT
-- DOMAIN-SUFFIX,qhres.com,DIRECT
-- DOMAIN-SUFFIX,qidian.com,DIRECT
-- DOMAIN-SUFFIX,qihucdn.com,DIRECT
-- DOMAIN-SUFFIX,qiniu.com,DIRECT
-- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
-- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+#Blizzard
+- DOMAIN-SUFFIX,blizzard.com,DIRECT
+- DOMAIN-SUFFIX,battle.net,DIRECT
+- DOMAIN,blzddist1-a.akamaihd.net,DIRECT
+#Steam
+- DOMAIN-SUFFIX,steampowered.com,DIRECT
+- DOMAIN-SUFFIX,steam-chat.com,DIRECT
+- DOMAIN-KEYWORD,steamcdn,DIRECT
+- DOMAIN-KEYWORD,steamstore,DIRECT
+- DOMAIN-KEYWORD,steamuserimages,DIRECT
+- DOMAIN-KEYWORD,steambroadcast,DIRECT
+#Tencent
 - DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,qqurl.com,DIRECT
-- DOMAIN-SUFFIX,rarbg.to,DIRECT
-- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
-- DOMAIN-SUFFIX,segmentfault.com,DIRECT
-- DOMAIN-SUFFIX,sinaapp.com,DIRECT
-- DOMAIN-SUFFIX,smzdm.com,DIRECT
-- DOMAIN-SUFFIX,sogou.com,DIRECT
-- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
-- DOMAIN-SUFFIX,sohu.com,DIRECT
-- DOMAIN-SUFFIX,soku.com,DIRECT
-- DOMAIN-SUFFIX,speedtest.net,DIRECT
-- DOMAIN-SUFFIX,sspai.com,DIRECT
-- DOMAIN-SUFFIX,suning.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
 - DOMAIN-SUFFIX,tencent.com,DIRECT
-- DOMAIN-SUFFIX,tenpay.com,DIRECT
-- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+#Alibaba
+- DOMAIN-SUFFIX,alibaba.com,DIRECT
+- DOMAIN-SUFFIX,alicdn.com,DIRECT
+- DOMAIN-SUFFIX,alikunlun.com,DIRECT
+- DOMAIN-SUFFIX,alipay.com,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,dingtalk.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
 - DOMAIN-SUFFIX,tmall.com,DIRECT
-- DOMAIN-SUFFIX,tudou.com,DIRECT
-- DOMAIN-SUFFIX,umetrip.com,DIRECT
-- DOMAIN-SUFFIX,upaiyun.com,DIRECT
-- DOMAIN-SUFFIX,upyun.com,DIRECT
-- DOMAIN-SUFFIX,v2ex.com,DIRECT
-- DOMAIN-SUFFIX,veryzhun.com,DIRECT
-- DOMAIN-SUFFIX,weather.com,DIRECT
-- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,tmall.hk,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
 - DOMAIN-SUFFIX,xiami.com,DIRECT
 - DOMAIN-SUFFIX,xiami.net,DIRECT
-- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
-- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+#NetEase
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163yun.com,DIRECT
+- DOMAIN-SUFFIX,lofter.com,DIRECT
+- DOMAIN-SUFFIX,ydstatic.com,DIRECT
+#Sohu
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,sohucs.com,DIRECT
+- DOMAIN-SUFFIX,sohu-inc.com,DIRECT
+- DOMAIN-SUFFIX,v-56.com,DIRECT
+#Sina
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+#JD
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jd.hk,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+#MI
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,mi-img.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,xiaomi.com,DIRECT
+#bilibili
+- DOMAIN-SUFFIX,acgvideo.com,DIRECT
+- DOMAIN-SUFFIX,biliapi.com,DIRECT
+- DOMAIN-SUFFIX,hdslb.com,DIRECT
+#iQiyi
+- DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+- DOMAIN-SUFFIX,71.am.com,DIRECT
+#HunanTV
+- DOMAIN-SUFFIX,hitv.com,DIRECT
+- DOMAIN-SUFFIX,mgtv.com,DIRECT
+#Meitu
+- DOMAIN-SUFFIX,meitu.com,DIRECT
+- DOMAIN-SUFFIX,meitudata.com,DIRECT
+- DOMAIN-SUFFIX,meitustat.com,DIRECT
+- DOMAIN-SUFFIX,meipai.com,DIRECT
+#YYeTs
+- DOMAIN-SUFFIX,jstucdn.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.io,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zmz2019.com,DIRECT
+- DOMAIN-SUFFIX,zmzapi.com,DIRECT
+- DOMAIN-SUFFIX,zmzapi.net,DIRECT
+- DOMAIN-SUFFIX,zmzfile.com,DIRECT
+#蛋蛋赞
+- DOMAIN-SUFFIX,baduziyuan.com,DIRECT
+- DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
+- DOMAIN-SUFFIX,czybjz.com,DIRECT
+- DOMAIN-SUFFIX,dandanzan.com,DIRECT
+- DOMAIN-SUFFIX,fjhps.com,DIRECT
+- DOMAIN-SUFFIX,kuyunbo.club,DIRECT
+#Baidu
+- DOMAIN-SUFFIX,baidu.com,DIRECT
+- DOMAIN-SUFFIX,baidubcr.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+#ChinaNet
+- DOMAIN-SUFFIX,21cn.com,DIRECT
+#ByteDance
+- DOMAIN-SUFFIX,feiliao.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,snssdk.com,DIRECT
+- DOMAIN-SUFFIX,iesdouyin.com,DIRECT
+- DOMAIN-SUFFIX,toutiao.com,DIRECT
+#360
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+#Akamai
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+# - DOMAIN-SUFFIX,akamai.net,DIRECT
+# - DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+# - DOMAIN-SUFFIX,akamaihd.net,DIRECT
+# - DOMAIN-SUFFIX,akamaistream.net,DIRECT
+# - DOMAIN-SUFFIX,akamaized.net,DIRECT
+#ChinaNetCenter
+- DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+- DOMAIN-SUFFIX,wangsu.com,DIRECT
+#IP Query
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,ip.la,DIRECT
+- DOMAIN-SUFFIX,ip-cdn.com,DIRECT
+- DOMAIN-SUFFIX,ipv6-test.com,DIRECT
+- DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+- DOMAIN-SUFFIX,whatismyip.com,DIRECT
+- DOMAIN,ip.bjango.com,DIRECT
+#Speed Test
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
+- DOMAIN,speedtest.macpaw.com,DIRECT
+#Other
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-SUFFIX,beitaichufang.com,DIRECT
+- DOMAIN-SUFFIX,cailianpress.com,DIRECT
+- DOMAIN-SUFFIX,chunyu.mobi,DIRECT
+- DOMAIN-SUFFIX,chushou.tv,DIRECT
+- DOMAIN-SUFFIX,cloudflare.com,DIRECT
+- DOMAIN-SUFFIX,cmbchina.com,DIRECT
+- DOMAIN-SUFFIX,cmbimg.com,DIRECT
+- DOMAIN-SUFFIX,dfcfw.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,douyu.com,DIRECT
+- DOMAIN-SUFFIX,dxycdn.com,DIRECT
+- DOMAIN-SUFFIX,eastmoney.com,DIRECT
+- DOMAIN-SUFFIX,futunn.com,DIRECT
+- DOMAIN-SUFFIX,geilicdn.com,DIRECT
+- DOMAIN-SUFFIX,hicloud.com,DIRECT
+- DOMAIN-SUFFIX,huya.com,DIRECT
+- DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
+- DOMAIN-SUFFIX,ithome.com,DIRECT
+- DOMAIN-SUFFIX,keepcdn.com,DIRECT
+- DOMAIN-SUFFIX,kkmh.com,DIRECT
+- DOMAIN-SUFFIX,ksosoft.com,DIRECT
+- DOMAIN-SUFFIX,luojilab.com,DIRECT
+- DOMAIN-SUFFIX,maoyun.tv,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mobike.com,DIRECT
+- DOMAIN-SUFFIX,mubu.com,DIRECT
+- DOMAIN-SUFFIX,myzaker.com,DIRECT
+- DOMAIN-SUFFIX,nvidia.com,DIRECT
+- DOMAIN-SUFFIX,paypal.com,DIRECT
+- DOMAIN-SUFFIX,paypalobjects.com,DIRECT
+- DOMAIN-SUFFIX,ronghub.com,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogo.com,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,teamviewer.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,udacity.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weidian.com,DIRECT
 - DOMAIN-SUFFIX,xmcdn.com,DIRECT
-- DOMAIN-SUFFIX,xunlei.com,DIRECT
-- DOMAIN-SUFFIX,yhd.com,DIRECT
-- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
-- DOMAIN-SUFFIX,yinxiang.com,DIRECT
-- DOMAIN-SUFFIX,ykimg.com,DIRECT
-- DOMAIN-SUFFIX,youdao.com,DIRECT
-- DOMAIN-SUFFIX,youku.com,DIRECT
-- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+- DOMAIN-SUFFIX,zhangzishi.cc,DIRECT
 - DOMAIN-SUFFIX,zhihu.com,DIRECT
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
-- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zhuihd.com,DIRECT
+
+# (📺 👉🏻Youtube) 视频
+#Youtube
+- DOMAIN-SUFFIX,googlevideo.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,youtube.com,📺 👉🏻Youtube
+- DOMAIN,youtubei.googleapis.com,📺 👉🏻Youtube
+#Netflix
+- DOMAIN-SUFFIX,netflix.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,netflix.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,nflxext.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,nflximg.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,nflximg.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,nflxso.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,nflxvideo.net,📺 👉🏻Youtube
+#Pornhub
+- DOMAIN-SUFFIX,phncdn.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,pornhub.com,📺 👉🏻Youtube
+#Fox+ (HK|TW|SG)
+- DOMAIN-SUFFIX,foxplus.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,theplatform.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,staticasiafox.akamaized.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,dashasiafox.akamaized.net,📺 👉🏻Youtube
+#(US)
+#HBO Now & HBO GO
+- DOMAIN-SUFFIX,hbo.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hbogo.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hboasia.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hbogo.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hbogoasia.hk,📺 👉🏻Youtube
+#Hulu
+- DOMAIN-SUFFIX,hulu.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,huluim.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hulustream.com,📺 👉🏻Youtube
+#PBS
+- DOMAIN-SUFFIX,pbs.org,📺 👉🏻Youtube
+#Fox Now
+- DOMAIN-SUFFIX,fox.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,foxdcg.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,uplynk.com,📺 👉🏻Youtube
+#(UK)
+#BBC iPlayer
+- DOMAIN-SUFFIX,bbc.co.uk,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,bbci.co.uk,📺 👉🏻Youtube
+- DOMAIN-KEYWORD,bbcfmt,📺 👉🏻Youtube
+- DOMAIN-KEYWORD,uk-live,📺 👉🏻Youtube
+#All4
+- DOMAIN-SUFFIX,c4assets.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,channel4.com,📺 👉🏻Youtube
+#(HK)
+#myTV_SUPER
+- DOMAIN-SUFFIX,mytvsuper.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,tvb.com,📺 👉🏻Youtube
+#encoreTVB
+- DOMAIN-SUFFIX,encoretvb.com,📺 👉🏻Youtube
+- DOMAIN,content.jwplatform.com,📺 👉🏻Youtube
+- DOMAIN,videos-f.jwpsrv.com,📺 👉🏻Youtube
+#ViuTV
+- DOMAIN-SUFFIX,viu.tv,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,nowe.com,📺 👉🏻Youtube
+- DOMAIN,api.viu.now.com,📺 👉🏻Youtube
+#(JP)
+#Hulu(フールー)
+- DOMAIN-SUFFIX,happyon.jp,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hulu.jp,📺 👉🏻Youtube
+#AbemaTV
+- DOMAIN-SUFFIX,abema.io,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,ameba.jp,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hayabusa.io,📺 👉🏻Youtube
+- DOMAIN,abematv.akamaized.net,📺 👉🏻Youtube
+- DOMAIN,ds-linear-abematv.akamaized.net,📺 👉🏻Youtube
+- DOMAIN,ds-vod-abematv.akamaized.net,📺 👉🏻Youtube
+- DOMAIN,linear-abematv.akamaized.net,📺 👉🏻Youtube
+#(TW)
+#Bahamut
+- DOMAIN-SUFFIX,bahamut.com.tw,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,gamer.com.tw,📺 👉🏻Youtube
+- DOMAIN,gamer-cds.cdn.hinet.net,📺 👉🏻Youtube
+- DOMAIN,gamer2-cds.cdn.hinet.net,📺 👉🏻Youtube
+#KKTV
+- DOMAIN-SUFFIX,kktv.com.tw,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,kktv.me,📺 👉🏻Youtube
+- DOMAIN,kktv-theater.kk.stream,📺 👉🏻Youtube
+#Line TV
+- DOMAIN-SUFFIX,linetv.tw,📺 👉🏻Youtube
+- DOMAIN,d3c7rimkq79yfu.cloudfront.net,📺 👉🏻Youtube
+#LiTV
+- DOMAIN-SUFFIX,litv.tv,📺 👉🏻Youtube
+- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,📺 👉🏻Youtube
+# (Music)
+#Spotify
+- DOMAIN-SUFFIX,pscdn.co,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,scdn.co,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,spotify.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,spoti.fi,📺 👉🏻Youtube
+#JOOX
+- DOMAIN-SUFFIX,joox.com,📺 👉🏻Youtube
+#Pandora
+- DOMAIN-SUFFIX,pandora.com,📺 👉🏻Youtube
+#KKBOX(HK|MO|TW|JP|SG|MY)
+- DOMAIN-SUFFIX,kkbox.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,kkbox.com.tw,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,kfs.io,📺 👉🏻Youtube
 
 # 国内直接链接
 - DOMAIN-SUFFIX,cn,DIRECT
