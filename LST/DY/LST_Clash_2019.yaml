@@ -25,10 +25,14 @@ dns:
 
 Proxy:
  #V2ray 系列
-- { name: "V2_LST_Dmit HK", type: vmess, server: 103.117.101.186, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: auto, network: ws, ws-path: /abc/123 }
-- { name: "V2_LST_BWG US", type: vmess, server: 67.230.177.112, port: 19177, uuid: 438e707e-702d-461e-b908-e0ac7cf9c744, alterId: 64, cipher: auto }
-- { name: "V2_A_Dmit", type: vmess, server: 103.117.103.26, port: 13143, uuid: efeb762c-db41-4bca-822a-1a166fedec1a, alterId: 64, cipher: auto }
-- { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: auto }
+- { name: "V2_LST_Dmit HK", type: vmess, server: 103.117.101.186, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: Auto, network: ws, ws-path: /abc/123 }
+- { name: "V2_LST_BWG US", type: vmess, server: 67.230.177.112, port: 19177, uuid: 438e707e-702d-461e-b908-e0ac7cf9c744, alterId: 64, cipher: Auto }
+- { name: "V2_A_Dmit", type: vmess, server: 103.117.103.26, port: 13143, uuid: efeb762c-db41-4bca-822a-1a166fedec1a, alterId: 64, cipher: Auto }
+- { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: Auto }
+
+# socks5 系列
+- { name: "BWG_QT01", type: socks5, server: 104.224.175.181, port: 42570, username: "lst", password: "0011" }
+
  #SS 系列
 - name: "SS_LST_QT04"
   type: ss
@@ -45,9 +49,9 @@ Proxy:
   password: "pSDeZLr0ip"
 
 Proxy Group:
-- { name: "🍒 Auto", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01"] }
-- { name: "📺 👉🏻Youtube", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
-- { name: "😃 👉🏻 📺Netflix", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
+- { name: "🍒 Auto", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01", "BWG_QT01"] }
+- { name: "👉🏻 📺 Youtube", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
+- { name: "🍑 Netflix 🥝", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
 
 Rule:
  #DomainSuffix：域名后缀匹配
@@ -59,14 +63,14 @@ Rule:
 #LST/VPN 自定义系列
 - DOMAIN-SUFFIX,ad.com,🍒 Auto
 - DOMAIN-SUFFIX,speedtest.net,🍒 Auto
-- DOMAIN-SUFFIX,google.com,📺 👉🏻Youtube
-- DOMAIN-KEYWORD,google,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,google.com,👉🏻 📺 Youtube
+- DOMAIN-KEYWORD,google,👉🏻 📺 Youtube
 
-- DOMAIN-SUFFIX,netflix.com,😃 👉🏻 📺Netflix
-- DOMAIN-KEYWORD,netflix,😃 👉🏻 📺Netflix
+- DOMAIN-SUFFIX,netflix.com,🍑 Netflix 🥝
+- DOMAIN-KEYWORD,netflix,🍑 Netflix 🥝
 
-- DOMAIN-SUFFIX,youtube.com,📺 👉🏻Youtube
-- DOMAIN-KEYWORD,youtube,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,youtube.com,👉🏻 📺 Youtube
+- DOMAIN-KEYWORD,youtube,👉🏻 📺 Youtube
 
 # 国内网站
 #Microsoft
@@ -253,107 +257,107 @@ Rule:
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
 - DOMAIN-SUFFIX,zhuihd.com,DIRECT
 
-# (📺 👉🏻Youtube) 视频
+# (👉🏻 📺 Youtube) 视频
 #Youtube
-- DOMAIN-SUFFIX,googlevideo.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,youtube.com,📺 👉🏻Youtube
-- DOMAIN,youtubei.googleapis.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,googlevideo.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,youtube.com,👉🏻 📺 Youtube
+- DOMAIN,youtubei.googleapis.com,👉🏻 📺 Youtube
 #Netflix
-- DOMAIN-SUFFIX,netflix.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,netflix.net,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,nflxext.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,nflximg.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,nflximg.net,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,nflxso.net,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,nflxvideo.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,netflix.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,netflix.net,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,nflxext.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,nflximg.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,nflximg.net,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,nflxso.net,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,nflxvideo.net,👉🏻 📺 Youtube
 #Pornhub
-- DOMAIN-SUFFIX,phncdn.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,pornhub.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,phncdn.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,pornhub.com,👉🏻 📺 Youtube
 #Fox+ (HK|TW|SG)
-- DOMAIN-SUFFIX,foxplus.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,theplatform.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,staticasiafox.akamaized.net,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,dashasiafox.akamaized.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,foxplus.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,theplatform.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,staticasiafox.akamaized.net,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,dashasiafox.akamaized.net,👉🏻 📺 Youtube
 #(US)
 #HBO Now & HBO GO
-- DOMAIN-SUFFIX,hbo.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,hbogo.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,hboasia.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,hbogo.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,hbogoasia.hk,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hbo.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,hbogo.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,hboasia.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,hbogo.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,hbogoasia.hk,👉🏻 📺 Youtube
 #Hulu
-- DOMAIN-SUFFIX,hulu.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,huluim.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,hulustream.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,hulu.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,huluim.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,hulustream.com,👉🏻 📺 Youtube
 #PBS
-- DOMAIN-SUFFIX,pbs.org,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,pbs.org,👉🏻 📺 Youtube
 #Fox Now
-- DOMAIN-SUFFIX,fox.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,foxdcg.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,uplynk.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,fox.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,foxdcg.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,uplynk.com,👉🏻 📺 Youtube
 #(UK)
 #BBC iPlayer
-- DOMAIN-SUFFIX,bbc.co.uk,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,bbci.co.uk,📺 👉🏻Youtube
-- DOMAIN-KEYWORD,bbcfmt,📺 👉🏻Youtube
-- DOMAIN-KEYWORD,uk-live,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,bbc.co.uk,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,bbci.co.uk,👉🏻 📺 Youtube
+- DOMAIN-KEYWORD,bbcfmt,👉🏻 📺 Youtube
+- DOMAIN-KEYWORD,uk-live,👉🏻 📺 Youtube
 #All4
-- DOMAIN-SUFFIX,c4assets.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,channel4.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,c4assets.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,channel4.com,👉🏻 📺 Youtube
 #(HK)
 #myTV_SUPER
-- DOMAIN-SUFFIX,mytvsuper.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,tvb.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,mytvsuper.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,tvb.com,👉🏻 📺 Youtube
 #encoreTVB
-- DOMAIN-SUFFIX,encoretvb.com,📺 👉🏻Youtube
-- DOMAIN,content.jwplatform.com,📺 👉🏻Youtube
-- DOMAIN,videos-f.jwpsrv.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,encoretvb.com,👉🏻 📺 Youtube
+- DOMAIN,content.jwplatform.com,👉🏻 📺 Youtube
+- DOMAIN,videos-f.jwpsrv.com,👉🏻 📺 Youtube
 #ViuTV
-- DOMAIN-SUFFIX,viu.tv,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,nowe.com,📺 👉🏻Youtube
-- DOMAIN,api.viu.now.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,viu.tv,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,nowe.com,👉🏻 📺 Youtube
+- DOMAIN,api.viu.now.com,👉🏻 📺 Youtube
 #(JP)
 #Hulu(フールー)
-- DOMAIN-SUFFIX,happyon.jp,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,hulu.jp,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,happyon.jp,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,hulu.jp,👉🏻 📺 Youtube
 #AbemaTV
-- DOMAIN-SUFFIX,abema.io,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,ameba.jp,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,hayabusa.io,📺 👉🏻Youtube
-- DOMAIN,abematv.akamaized.net,📺 👉🏻Youtube
-- DOMAIN,ds-linear-abematv.akamaized.net,📺 👉🏻Youtube
-- DOMAIN,ds-vod-abematv.akamaized.net,📺 👉🏻Youtube
-- DOMAIN,linear-abematv.akamaized.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,abema.io,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,ameba.jp,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,hayabusa.io,👉🏻 📺 Youtube
+- DOMAIN,abematv.akamaized.net,👉🏻 📺 Youtube
+- DOMAIN,ds-linear-abematv.akamaized.net,👉🏻 📺 Youtube
+- DOMAIN,ds-vod-abematv.akamaized.net,👉🏻 📺 Youtube
+- DOMAIN,linear-abematv.akamaized.net,👉🏻 📺 Youtube
 #(TW)
 #Bahamut
-- DOMAIN-SUFFIX,bahamut.com.tw,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,gamer.com.tw,📺 👉🏻Youtube
-- DOMAIN,gamer-cds.cdn.hinet.net,📺 👉🏻Youtube
-- DOMAIN,gamer2-cds.cdn.hinet.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,bahamut.com.tw,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,gamer.com.tw,👉🏻 📺 Youtube
+- DOMAIN,gamer-cds.cdn.hinet.net,👉🏻 📺 Youtube
+- DOMAIN,gamer2-cds.cdn.hinet.net,👉🏻 📺 Youtube
 #KKTV
-- DOMAIN-SUFFIX,kktv.com.tw,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,kktv.me,📺 👉🏻Youtube
-- DOMAIN,kktv-theater.kk.stream,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,kktv.com.tw,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,kktv.me,👉🏻 📺 Youtube
+- DOMAIN,kktv-theater.kk.stream,👉🏻 📺 Youtube
 #Line TV
-- DOMAIN-SUFFIX,linetv.tw,📺 👉🏻Youtube
-- DOMAIN,d3c7rimkq79yfu.cloudfront.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,linetv.tw,👉🏻 📺 Youtube
+- DOMAIN,d3c7rimkq79yfu.cloudfront.net,👉🏻 📺 Youtube
 #LiTV
-- DOMAIN-SUFFIX,litv.tv,📺 👉🏻Youtube
-- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,litv.tv,👉🏻 📺 Youtube
+- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,👉🏻 📺 Youtube
 # (Music)
 #Spotify
-- DOMAIN-SUFFIX,pscdn.co,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,scdn.co,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,spotify.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,spoti.fi,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,pscdn.co,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,scdn.co,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,spotify.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,spoti.fi,👉🏻 📺 Youtube
 #JOOX
-- DOMAIN-SUFFIX,joox.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,joox.com,👉🏻 📺 Youtube
 #Pandora
-- DOMAIN-SUFFIX,pandora.com,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,pandora.com,👉🏻 📺 Youtube
 #KKBOX(HK|MO|TW|JP|SG|MY)
-- DOMAIN-SUFFIX,kkbox.com,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,kkbox.com.tw,📺 👉🏻Youtube
-- DOMAIN-SUFFIX,kfs.io,📺 👉🏻Youtube
+- DOMAIN-SUFFIX,kkbox.com,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,kkbox.com.tw,👉🏻 📺 Youtube
+- DOMAIN-SUFFIX,kfs.io,👉🏻 📺 Youtube
 
 # 国内直接链接
 - DOMAIN-SUFFIX,cn,DIRECT
