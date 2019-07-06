@@ -49,7 +49,7 @@ Proxy:
   password: "pSDeZLr0ip"
 
 Proxy Group:
-- { name: "🍒 Manual selection 🍒", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01", "BWG_QT01"] }
+- { name: "🍒 手动选择 🍒", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01", "BWG_QT01"] }
 - { name: "📺 Youtube 📺", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
 - { name: "🍑 Netflix 🥝", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
 
@@ -61,8 +61,8 @@ Rule:
  #GEOIP：GEOIP数据库（国家代码）匹配
 
 #LST/VPN 自定义系列
-- DOMAIN-SUFFIX,ad.com,🍒 Manual selection 🍒
-- DOMAIN-SUFFIX,speedtest.net,🍒 Manual selection 🍒
+- DOMAIN-SUFFIX,ad.com,🍒 手动选择 🍒
+- DOMAIN-SUFFIX,speedtest.net,🍒 手动选择 🍒
 - DOMAIN-SUFFIX,google.com,📺 Youtube 📺
 - DOMAIN-KEYWORD,google,📺 Youtube 📺
 
@@ -362,4 +362,4 @@ Rule:
 # 国内直接链接
 - DOMAIN-SUFFIX,cn,DIRECT
 - GEOIP,CN,DIRECT
-- FINAL,🍒 Manual selection 🍒
+- FINAL,🍒 手动选择 🍒
