@@ -41,15 +41,8 @@ Proxy:
   cipher: chacha20-ietf-poly1305
   password: "LTfyMQqhg2"
 
-- name: "SS_US_QT01"
-  type: ss
-  server: 107.182.181.152
-  port: 54473
-  cipher: chacha20
-  password: "pSDeZLr0ip"
-
 Proxy Group:
-- { name: "🍒 手动选择 🍒", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04",  "SS_US_QT01", "BWG_QT01"] }
+- { name: "🍒 手动选择 🍒", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04", "BWG_QT01"] }
 - { name: "📺 Youtube 📺", type: select, proxies: ["V2_LST_BWG US","V2_LST_QT05"], url: "https://www.bing.com", interval: 300 }
 - { name: "🍑 Netflix 🥝", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
 
