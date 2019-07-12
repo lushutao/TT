@@ -14,12 +14,12 @@ secret: "lst"
 dns:
   enable: true
   ipv6: false
-  # listen: 0.0.0.0:53
-  # enhanced-mode: redir-host
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
   nameserver:
      - 1.1.1.1
      - 8.8.8.8
-     - 1.2.4.8
+      - 119.29.29.29
      - 114.114.114.114
      - 223.5.5.5
      - tls://dns.rubyfish.cn:853
