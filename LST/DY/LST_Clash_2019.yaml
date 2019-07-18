@@ -21,7 +21,8 @@ dns:
      - 119.29.29.29	
   fallback:
      - tls://dns.rubyfish.cn:853
-     - tls://dns.
+     - tls://8.8.4.4:853
+     - tls://1.0.0.1:85
      
 Proxy:
  #V2ray 系列
