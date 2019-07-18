@@ -17,14 +17,12 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
   nameserver:
-     - 1.1.1.1
-     - 8.8.8.8
-     - 119.29.29.29
-     - 114.114.114.114
      - 223.5.5.5
+     - 119.29.29.29	
+  fallback:
      - tls://dns.rubyfish.cn:853
-     - tls://dns.google
-
+     - tls://dns.
+     
 Proxy:
  #V2ray 系列
 - { name: "V2_LST_Dmit HK", type: vmess, server: 103.117.101.186, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: Auto, network: ws, ws-path: /abc/123 }
