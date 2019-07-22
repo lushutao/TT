@@ -61,6 +61,24 @@ Proxy Group:
  #GEOIP：GEOIP数据库（国家代码）匹配
 
 Rule:
+# Apple
+- DOMAIN,evintl-ocsp.verisign.com,Proxy
+- DOMAIN,evsecure-ocsp.verisign.com,Proxy
+- DOMAIN-SUFFIX,appleiphonecell.com,Proxy
+- DOMAIN-SUFFIX,appsto.re,Proxy
+- DOMAIN-SUFFIX,aaplimg.com,Proxy
+- DOMAIN-SUFFIX,akadns.net,Proxy
+- DOMAIN-SUFFIX,apple.cn,Proxy
+- DOMAIN-SUFFIX,apple.co,Proxy
+- DOMAIN-SUFFIX,apple.com,Proxy
+- DOMAIN-SUFFIX,cdn-apple.com,Proxy
+- DOMAIN-SUFFIX,icloud.com,Proxy
+- DOMAIN-SUFFIX,icloud-content.com,Proxy
+- DOMAIN-SUFFIX,itunes.com,Proxy
+- DOMAIN-SUFFIX,me.com,Proxy
+- DOMAIN-SUFFIX,mzstatic.com,Proxy
+- DOMAIN-SUFFIX,symcb.com,Proxy
+- DOMAIN-SUFFIX,symcd.com,Proxy
 # direct
 #国内常见域名
 - DOMAIN-SUFFIX,12306.com,DIRECT
