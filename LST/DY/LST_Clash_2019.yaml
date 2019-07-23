@@ -49,9 +49,8 @@ Proxy Group:
 # load-balance 可以使相同 eTLD 请求在同一条代理线路上   負載均衡
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 
-- { name: "Proxy", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04", "BWG_QT01"], url: "http://www.gstatic.com/generate_204", interval: 300 }
-- { name: "Netflix", type: url-test, proxies: ["V2_LST_QT05","V2_A_Dmit"], url: "https://www.netflix.com", interval: 300 }
-- { name: "FinalProxy", type: select, proxies: [ "V2_LST_BWG US",  "V2_LST_QT05", "Proxy", "DIRECT"] }
+- { name: "Proxy", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04", "BWG_QT01"] }
+- { name: "🎬video🎥",type: select, proxies: ["V2_LST_QT05","V2_A_Dmit", "V2_LST_BWG US"] }
 
 
 #LST/VPN 自定义系列
@@ -80,6 +79,7 @@ Rule:
 - DOMAIN-SUFFIX,mzstatic.com,Proxy
 - DOMAIN-SUFFIX,symcb.com,Proxy
 - DOMAIN-SUFFIX,symcd.com,Proxy
+
 # direct
 #国内常见域名
 - DOMAIN-SUFFIX,12306.com,DIRECT
@@ -293,7 +293,7 @@ Rule:
 - DOMAIN-KEYWORD,appledaily,Proxy
 - DOMAIN-KEYWORD,blogspot,Proxy
 - DOMAIN-KEYWORD,dropbox,Proxy
-- DOMAIN-KEYWORD,google,Netflix
+- DOMAIN-KEYWORD,google,Proxy
 - DOMAIN-KEYWORD,spotify,Proxy
 - DOMAIN-KEYWORD,telegram,Proxy
 - DOMAIN-KEYWORD,whatsapp,Proxy
@@ -320,8 +320,8 @@ Rule:
 - DOMAIN-SUFFIX,fbsbx.com,Proxy
 - DOMAIN-SUFFIX,gcr.io,Proxy
 - DOMAIN-SUFFIX,gmail.com,Proxy
-- DOMAIN-SUFFIX,googleapis.com,Netflix
-- DOMAIN-SUFFIX,googlevideo.com,Netflix
+- DOMAIN-SUFFIX,googleapis.com,Proxy
+- DOMAIN-SUFFIX,googlevideo.com,Proxy
 - DOMAIN-SUFFIX,gosetsuden.jp,Proxy
 - DOMAIN-SUFFIX,gvt1.com,Proxy
 - DOMAIN-SUFFIX,gwtproject.org,Proxy
@@ -354,8 +354,8 @@ Rule:
 - DOMAIN-SUFFIX,webrtc.org,Proxy
 - DOMAIN-SUFFIX,whatsapp.com,Proxy
 - DOMAIN-SUFFIX,whatsapp.net,Proxy
-- DOMAIN-SUFFIX,youtube.com,Netflix
-- DOMAIN-SUFFIX,youtube-nocookie.com,Netflix
+- DOMAIN-SUFFIX,youtube.com,Proxy
+- DOMAIN-SUFFIX,youtube-nocookie.com,Proxy
 
 # steam用户根据各自情况修改此规则
 - DOMAIN-SUFFIX,steampowered.com,Proxy
@@ -389,13 +389,13 @@ Rule:
 - DOMAIN-SUFFIX,tvb.com,Proxy
 
 # Netflix
-- DOMAIN-SUFFIX,netflix.com,Netflix
-- DOMAIN-SUFFIX,netflix.net,Netflix
-- DOMAIN-SUFFIX,nflxext.com,Netflix
-- DOMAIN-SUFFIX,nflximg.com,Netflix
-- DOMAIN-SUFFIX,nflximg.net,Netflix
-- DOMAIN-SUFFIX,nflxso.net,Netflix
-- DOMAIN-SUFFIX,nflxvideo.net,Netflix
+- DOMAIN-SUFFIX,netflix.com,🎬video🎥
+- DOMAIN-SUFFIX,netflix.net,🎬video🎥
+- DOMAIN-SUFFIX,nflxext.com,🎬video🎥
+- DOMAIN-SUFFIX,nflximg.com,🎬video🎥
+- DOMAIN-SUFFIX,nflximg.net,🎬video🎥
+- DOMAIN-SUFFIX,nflxso.net,🎬video🎥
+- DOMAIN-SUFFIX,nflxvideo.net,🎬video🎥
 
 # proxy list from gfwlist!
 # gfw list updated on 2019-07-05 10:34:44
@@ -1110,90 +1110,90 @@ Rule:
 - DOMAIN-SUFFIX,godoc.org,Proxy
 - DOMAIN-SUFFIX,golang.org,Proxy
 - DOMAIN-SUFFIX,goo.gl,Proxy
-- DOMAIN-SUFFIX,google.ae,Netflix
-- DOMAIN-SUFFIX,google.as,Netflix
-- DOMAIN-SUFFIX,google.am,Netflix
-- DOMAIN-SUFFIX,google.at,Netflix
-- DOMAIN-SUFFIX,google.az,Netflix
-- DOMAIN-SUFFIX,google.ba,Netflix
-- DOMAIN-SUFFIX,google.be,Netflix
-- DOMAIN-SUFFIX,google.bg,Netflix
-- DOMAIN-SUFFIX,google.ca,Netflix
-- DOMAIN-SUFFIX,google.cd,Netflix
-- DOMAIN-SUFFIX,google.ci,Netflix
-- DOMAIN-SUFFIX,google.co.id,Netflix
-- DOMAIN-SUFFIX,google.co.jp,Netflix
-- DOMAIN-SUFFIX,google.co.kr,Netflix
-- DOMAIN-SUFFIX,google.co.ma,Netflix
-- DOMAIN-SUFFIX,google.co.uk,Netflix
-- DOMAIN-SUFFIX,google.com,Netflix
-- DOMAIN-SUFFIX,google.de,Netflix
-- DOMAIN-SUFFIX,google.dev,Netflix
-- DOMAIN-SUFFIX,google.dj,Netflix
-- DOMAIN-SUFFIX,google.dk,Netflix
-- DOMAIN-SUFFIX,google.es,Netflix
-- DOMAIN-SUFFIX,google.fi,Netflix
-- DOMAIN-SUFFIX,google.fm,Netflix
-- DOMAIN-SUFFIX,google.fr,Netflix
-- DOMAIN-SUFFIX,google.gg,Netflix
-- DOMAIN-SUFFIX,google.gl,Netflix
-- DOMAIN-SUFFIX,google.gr,Netflix
-- DOMAIN-SUFFIX,google.ie,Netflix
-- DOMAIN-SUFFIX,google.is,Netflix
-- DOMAIN-SUFFIX,google.it,Netflix
-- DOMAIN-SUFFIX,google.jo,Netflix
-- DOMAIN-SUFFIX,google.kz,Netflix
-- DOMAIN-SUFFIX,google.lv,Netflix
-- DOMAIN-SUFFIX,google.mn,Netflix
-- DOMAIN-SUFFIX,google.ms,Netflix
-- DOMAIN-SUFFIX,google.nl,Netflix
-- DOMAIN-SUFFIX,google.nu,Netflix
-- DOMAIN-SUFFIX,google.no,Netflix
-- DOMAIN-SUFFIX,google.ro,Netflix
-- DOMAIN-SUFFIX,google.ru,Netflix
-- DOMAIN-SUFFIX,google.rw,Netflix
-- DOMAIN-SUFFIX,google.sc,Netflix
-- DOMAIN-SUFFIX,google.sh,Netflix
-- DOMAIN-SUFFIX,google.sk,Netflix
-- DOMAIN-SUFFIX,google.sm,Netflix
-- DOMAIN-SUFFIX,google.sn,Netflix
-- DOMAIN-SUFFIX,google.tk,Netflix
-- DOMAIN-SUFFIX,google.tm,Netflix
-- DOMAIN-SUFFIX,google.to,Netflix
-- DOMAIN-SUFFIX,google.tt,Netflix
-- DOMAIN-SUFFIX,google.vu,Netflix
-- DOMAIN-SUFFIX,google.ws,Netflix
-- DOMAIN-SUFFIX,googleapis.cn,Netflix
-- DOMAIN-SUFFIX,googleapis.com,Netflix
-- DOMAIN-SUFFIX,googleapps.com,Netflix
-- DOMAIN-SUFFIX,googleartproject.com,Netflix
-- DOMAIN-SUFFIX,googleblog.com,Netflix
-- DOMAIN-SUFFIX,googlebot.com,Netflix
-- DOMAIN-SUFFIX,googlechinawebmaster.com,Netflix
-- DOMAIN-SUFFIX,googlecode.com,Netflix
-- DOMAIN-SUFFIX,googlecommerce.com,Netflix
-- DOMAIN-SUFFIX,googledomains.com,Netflix
-- DOMAIN-SUFFIX,googlearth.com,Netflix
-- DOMAIN-SUFFIX,googleearth.com,Netflix
-- DOMAIN-SUFFIX,googledrive.com,Netflix
-- DOMAIN-SUFFIX,googlegroups.com,Netflix
-- DOMAIN-SUFFIX,googlehosted.com,Netflix
-- DOMAIN-SUFFIX,googleideas.com,Netflix
-- DOMAIN-SUFFIX,googleinsidesearch.com,Netflix
-- DOMAIN-SUFFIX,googlelabs.com,Netflix
-- DOMAIN-SUFFIX,googlemail.com,Netflix
-- DOMAIN-SUFFIX,googlemashups.com,Netflix
-- DOMAIN-SUFFIX,googlepagecreator.com,Netflix
-- DOMAIN-SUFFIX,googleplay.com,Netflix
-- DOMAIN-SUFFIX,googleplus.com,Netflix
-- DOMAIN-SUFFIX,googlescholar.com,Netflix
-- DOMAIN-SUFFIX,googlesource.com,Netflix
-- DOMAIN-SUFFIX,googleusercontent.com,Netflix
-- DOMAIN-SUFFIX,googlevideo.com,Netflix
-- DOMAIN-SUFFIX,googleweblight.com,Netflix
-- DOMAIN-SUFFIX,googlezip.net,Netflix
-- DOMAIN-SUFFIX,groups.google.cn,Netflix
-- DOMAIN-SUFFIX,grow.google,Netflix
+- DOMAIN-SUFFIX,google.ae,Proxy
+- DOMAIN-SUFFIX,google.as,Proxy
+- DOMAIN-SUFFIX,google.am,Proxy
+- DOMAIN-SUFFIX,google.at,Proxy
+- DOMAIN-SUFFIX,google.az,Proxy
+- DOMAIN-SUFFIX,google.ba,Proxy
+- DOMAIN-SUFFIX,google.be,Proxy
+- DOMAIN-SUFFIX,google.bg,Proxy
+- DOMAIN-SUFFIX,google.ca,Proxy
+- DOMAIN-SUFFIX,google.cd,Proxy
+- DOMAIN-SUFFIX,google.ci,Proxy
+- DOMAIN-SUFFIX,google.co.id,Proxy
+- DOMAIN-SUFFIX,google.co.jp,Proxy
+- DOMAIN-SUFFIX,google.co.kr,Proxy
+- DOMAIN-SUFFIX,google.co.ma,Proxy
+- DOMAIN-SUFFIX,google.co.uk,Proxy
+- DOMAIN-SUFFIX,google.com,Proxy
+- DOMAIN-SUFFIX,google.de,Proxy
+- DOMAIN-SUFFIX,google.dev,Proxy
+- DOMAIN-SUFFIX,google.dj,Proxy
+- DOMAIN-SUFFIX,google.dk,Proxy
+- DOMAIN-SUFFIX,google.es,Proxy
+- DOMAIN-SUFFIX,google.fi,Proxy
+- DOMAIN-SUFFIX,google.fm,Proxy
+- DOMAIN-SUFFIX,google.fr,Proxy
+- DOMAIN-SUFFIX,google.gg,Proxy
+- DOMAIN-SUFFIX,google.gl,Proxy
+- DOMAIN-SUFFIX,google.gr,Proxy
+- DOMAIN-SUFFIX,google.ie,Proxy
+- DOMAIN-SUFFIX,google.is,Proxy
+- DOMAIN-SUFFIX,google.it,Proxy
+- DOMAIN-SUFFIX,google.jo,Proxy
+- DOMAIN-SUFFIX,google.kz,Proxy
+- DOMAIN-SUFFIX,google.lv,Proxy
+- DOMAIN-SUFFIX,google.mn,Proxy
+- DOMAIN-SUFFIX,google.ms,Proxy
+- DOMAIN-SUFFIX,google.nl,Proxy
+- DOMAIN-SUFFIX,google.nu,Proxy
+- DOMAIN-SUFFIX,google.no,Proxy
+- DOMAIN-SUFFIX,google.ro,Proxy
+- DOMAIN-SUFFIX,google.ru,Proxy
+- DOMAIN-SUFFIX,google.rw,Proxy
+- DOMAIN-SUFFIX,google.sc,Proxy
+- DOMAIN-SUFFIX,google.sh,Proxy
+- DOMAIN-SUFFIX,google.sk,Proxy
+- DOMAIN-SUFFIX,google.sm,Proxy
+- DOMAIN-SUFFIX,google.sn,Proxy
+- DOMAIN-SUFFIX,google.tk,Proxy
+- DOMAIN-SUFFIX,google.tm,Proxy
+- DOMAIN-SUFFIX,google.to,Proxy
+- DOMAIN-SUFFIX,google.tt,Proxy
+- DOMAIN-SUFFIX,google.vu,Proxy
+- DOMAIN-SUFFIX,google.ws,Proxy
+- DOMAIN-SUFFIX,googleapis.cn,Proxy
+- DOMAIN-SUFFIX,googleapis.com,Proxy
+- DOMAIN-SUFFIX,googleapps.com,Proxy
+- DOMAIN-SUFFIX,googleartproject.com,Proxy
+- DOMAIN-SUFFIX,googleblog.com,Proxy
+- DOMAIN-SUFFIX,googlebot.com,Proxy
+- DOMAIN-SUFFIX,googlechinawebmaster.com,Proxy
+- DOMAIN-SUFFIX,googlecode.com,Proxy
+- DOMAIN-SUFFIX,googlecommerce.com,Proxy
+- DOMAIN-SUFFIX,googledomains.com,Proxy
+- DOMAIN-SUFFIX,googlearth.com,Proxy
+- DOMAIN-SUFFIX,googleearth.com,Proxy
+- DOMAIN-SUFFIX,googledrive.com,Proxy
+- DOMAIN-SUFFIX,googlegroups.com,Proxy
+- DOMAIN-SUFFIX,googlehosted.com,Proxy
+- DOMAIN-SUFFIX,googleideas.com,Proxy
+- DOMAIN-SUFFIX,googleinsidesearch.com,Proxy
+- DOMAIN-SUFFIX,googlelabs.com,Proxy
+- DOMAIN-SUFFIX,googlemail.com,Proxy
+- DOMAIN-SUFFIX,googlemashups.com,Proxy
+- DOMAIN-SUFFIX,googlepagecreator.com,Proxy
+- DOMAIN-SUFFIX,googleplay.com,Proxy
+- DOMAIN-SUFFIX,googleplus.com,Proxy
+- DOMAIN-SUFFIX,googlescholar.com,Proxy
+- DOMAIN-SUFFIX,googlesource.com,Proxy
+- DOMAIN-SUFFIX,googleusercontent.com,Proxy
+- DOMAIN-SUFFIX,googlevideo.com,Proxy
+- DOMAIN-SUFFIX,googleweblight.com,Proxy
+- DOMAIN-SUFFIX,googlezip.net,Proxy
+- DOMAIN-SUFFIX,groups.google.cn,Proxy
+- DOMAIN-SUFFIX,grow.google,Proxy
 - DOMAIN-SUFFIX,gstatic.com,Proxy
 - DOMAIN-SUFFIX,gvt0.com,Proxy
 - DOMAIN-SUFFIX,gvt1.com,Proxy
@@ -5929,8 +5929,9 @@ Rule:
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,172.16.0.0/12,DIRECT
 - IP-CIDR,192.168.0.0/16,DIRECT
+
 - DOMAIN-SUFFIX,cn,DIRECT
 
 # 最终规则
 - GEOIP,CN,DIRECT
-- MATCH,FinalProxy
+- MATCH,Proxy
