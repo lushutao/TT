@@ -29,7 +29,7 @@ Proxy:
 - { name: "V2_LST_QT05", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: Auto }
 
 # socks5 系列
-- { name: "BWG_QT01", type: socks5, server: 104.224.175.181, port: 42570, username: "lst", password: "0011" }
+#- { name: "BWG_QT01", type: socks5, server: 104.224.175.181, port: 42570, username: "lst", password: "0011" }
 
  #SS 系列
 - name: "SS_LST_QT04"
@@ -45,7 +45,7 @@ Proxy Group:
 # load-balance 可以使相同 eTLD 请求在同一条代理线路上   負載均衡
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 
-- { name: "Proxy", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04", "BWG_QT01"] }
+- { name: "Proxy", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04"] }
 - { name: "🎬video🎥",type: select, proxies: ["V2_LST_QT05","V2_A_Dmit", "V2_LST_BWG US"] }
 
 
@@ -57,6 +57,9 @@ Proxy Group:
  #GEOIP：GEOIP数据库（国家代码）匹配
 
 Rule:
+#LST
+- DOMAIN-SUFFIX,djdsht.com,Proxy
+
 # Apple
 - DOMAIN,evintl-ocsp.verisign.com,Proxy
 - DOMAIN,evsecure-ocsp.verisign.com,Proxy
