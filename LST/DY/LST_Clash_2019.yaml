@@ -32,12 +32,8 @@ Proxy:
 #- { name: "BWG_QT01", type: socks5, server: 104.224.175.181, port: 42570, username: "lst", password: "0011" }
 
  #SS 系列
-- name: "SS_LST_QT04"
-  type: ss
-  server: 103.135.250.75
-  port: 22598
-  cipher: chacha20-ietf-poly1305
-  password: "LTfyMQqhg2"
+- { name: "SS_LST_QT04", type: ss, server: 103.135.250.75, port: 22598, cipher: chacha20-ietf-poly1305, password: "LTfyMQqhg2", udp: true }
+
 
 Proxy Group:
 # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
@@ -59,6 +55,7 @@ Proxy Group:
 Rule:
 #LST
 - DOMAIN-SUFFIX,djdsht.com,Proxy
+- DOMAIN-SUFFIX,orsoon.com,DIRECT
 
 # Apple
 - DOMAIN,evintl-ocsp.verisign.com,Proxy
