@@ -42,8 +42,8 @@ Proxy Group:
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 
 - { name: "Proxy", type: select, proxies: ["V2_LST_Dmit HK", "V2_LST_BWG US", "V2_A_Dmit",  "V2_LST_QT05",  "SS_LST_QT04"] }
-- { name: "Video🎥",type: select, proxies: ["V2_LST_QT05" "V2_LST_BWG US"]] }
-- { name: "不可描述",type: select, proxies: ["V2_LST_BWG US" "DIRECT"]] }
+- { name: "Video🎥",type: select, proxies: ["V2_LST_QT05" "V2_LST_BWG US"] }
+- { name: "不可描述",type: select, proxies: ["V2_LST_BWG US" "DIRECT"] }
 
 #LST/VPN 自定义系列
  #DomainSuffix：域名后缀匹配
