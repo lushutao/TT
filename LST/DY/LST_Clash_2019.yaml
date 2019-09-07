@@ -12,8 +12,8 @@ log-level: info
 external-controller: 127.0.0.1:9090
 secret: "lst"
 
-experimental:
-  send-through: 192.168.66.224:0
+#experimental:
+#  send-through: 192.168.66.224:0
 
 dns:
   enable: true
