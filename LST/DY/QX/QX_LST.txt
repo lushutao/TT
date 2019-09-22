@@ -56,13 +56,13 @@ server=/*.xiaomi.com/119.29.29.29
 # ssid policy points to the server depending on the network environment.
 #
 [policy]
-static=🍎 苹果服务, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/1.png
-static=💻 国外影视, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/2.png
-static=📽 国内视频, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
-static=🎬 YouTube, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
-static=📺 Netflix, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
-static=🌏 国外网站, proxy,direct, img-url= https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Global.png
-static=🕹 黑/白名单,direct, proxy, img-url= https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Final.png
+static= 苹果服务, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/1.png
+static= 国外影视, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/2.png
+static= 国内视频, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
+static= YouTube, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
+static= Netflix, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
+static= 国外网站, proxy,direct, img-url= https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Global.png
+static= 黑/白名单,direct, proxy, img-url= https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Final.png
 
 
 ;static=policy-name-1, Sample-A, Sample-B, Sample-C
@@ -80,13 +80,13 @@ https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_SS.txt, tag=LS
 [filter_remote]
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=🚦去广告, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=🚫 运营商劫持, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list, force-policy=📽 国内视频, tag=📽 国内视频, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Netflix.list, tag=📺 Netflix, force-policy=📺 Netflix, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/YouTube.list, tag=🎬 YouTube, force-policy=🎬 YouTube, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list, tag=💻 国外影视,force-policy= 💻 国外影视, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=🌍 国外网站, force-policy= 🌏 国外网站, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Apple.list, tag= Apple服务, force-policy=🍎 苹果服务,enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=🐼 国内网站, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list, force-policy=  国内视频, tag=  国内视频, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Netflix.list, tag=  Netflix, force-policy=  Netflix, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/YouTube.list, tag=  YouTube, force-policy=  YouTube, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list, tag=  国外影视,force-policy=   国外影视, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=  国外网站, force-policy=   国外网站, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Apple.list, tag= Apple服务, force-policy=  苹果服务,enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=  国内网站, enabled=true
 
 [rewrite_remote]
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag=神机复写规则, enabled=true
@@ -112,7 +112,7 @@ ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
 geoip, cn, direct
-final, 🕹 黑/白名单
+final,   黑/白名单
 
 
 [rewrite_local]
