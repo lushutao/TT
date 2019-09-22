@@ -81,7 +81,7 @@ https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_SS.txt, tag=LS
 
 #自定义分流规则 订阅地址_设置
 [filter_remote]
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=🚦去广告,force-policy=去广告 enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=🚦去广告,force-policy=去广告, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=🚫 运营商劫持, enabled=true
 
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/AppleService.list, tag=Apple,force-policy=Apple, enabled=true
