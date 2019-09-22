@@ -57,7 +57,7 @@ static=Netflix, direct, proxy, img-url= https://raw.githubusercontent.com/lushut
 static=国内视频, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
 static=国外影视, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
 static=国外网站, proxy,direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
-static=Wechat,direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/VX.png
+static=黑名单,direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/VX.png
 
 ;static=policy-name-1, Sample-A, Sample-B, Sample-C
 ;available=policy-name-2, Sample-A, Sample-B, Sample-C
@@ -110,7 +110,7 @@ ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
 geoip, cn, direct
-final,   Wechat
+final,   黑名单
 
 
 [rewrite_local]
