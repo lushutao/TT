@@ -51,13 +51,13 @@ server=/*.xiaomi.com/119.29.29.29
 
 #自定义图标_设置
 [policy]
-static=Apple, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/1.png
-static=YouTube, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/2.png
-static=Netflix, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
-static=国内域名, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
-static=国内IP, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
-static=国外网址, proxy,direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
-static=黑名单,direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/VX.png
+static=国内网站, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/1.png
+static=国内IP, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/2.png
+static=国外网址, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
+static=Apple, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
+static=Netflix, proxy, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
+static=去广告, direct,proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
+static=二维码,direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/VX.png
 
 ;static=policy-name-1, Sample-A, Sample-B, Sample-C
 ;available=policy-name-2, Sample-A, Sample-B, Sample-C
@@ -81,11 +81,11 @@ https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_SS.txt, tag=LS
 
 #自定义分流规则 订阅地址_设置
 [filter_remote]
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=🚦去广告, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=🚦去广告,force-policy=去广告 enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=🚫 运营商劫持, enabled=true
 
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/AppleService.list, tag=Apple,force-policy=Apple, enabled=true
-https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/CNDomain.list, tag=国内域名,force-policy=国内网址, enabled=true
+https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/CNDomain.list, tag=国内域名,force-policy=国内网站, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/CNIP.list, tag=国内IP,force-policy=国内IP, enabled=false
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/GFW.list, tag=GFWList, force-policy=国外网址, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/Netflix.list, tag=Netflix,force-policy=Netflix, enabled=true
@@ -108,7 +108,7 @@ ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
 geoip, cn, direct
-final,   黑名单
+final,   proxy
 
 
 [rewrite_local]
