@@ -15,7 +15,6 @@ server=117.50.10.10
 server=223.5.5.5
 server=119.29.29.29:53
 server=119.28.28.28
-
 server=/*.taobao.com/223.5.5.5
 server=/*.tmall.com/223.5.5.5
 server=/*.alipay.com/223.5.5.5
@@ -34,29 +33,6 @@ server=/*.127.net/119.29.29.29
 server=/*.netease.com/119.29.29.29
 server=/*.mi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
-
-# static policy points to the server in candidates you manually selected.
-# available policy points to the first available server in candidates based on server_check_url(concurrent url latency test will be immediately launched when the policy has been triggered and the policy result is unavailable).
-# round-robin policy points to the next server in candidates for next connection.
-# ssid policy points to the server depending on the network environment.
-
-#自定义图标_设置
-[policy]
-static=国内网站, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/1.png
-static=国内IP, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/2.png
-static=国外网址, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
-static=Apple, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
-static=Netflix, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
-static=去广告, direct,proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
-static=二维码,direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/VX.png
-
-;static=policy-name-1, Sample-A, Sample-B, Sample-C
-;available=policy-name-2, Sample-A, Sample-B, Sample-C
-;round-robin=policy-name-3, Sample-A, Sample-B, Sample-C
-;ssid=policy-name-4, Sample-A, Sample-B, LINK_22E171:Sample-B, LINK_22E172:Sample-C
-
-# Params "tag" and "enabled" are optional.
-# The default sync interval for all kinds of remote resources is 24*60*60 seconds.
 
 
 #自定义订阅地址 SS SSR _设置
@@ -80,6 +56,24 @@ https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/conf
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/CNIP.list, tag=国内IP,force-policy=国内IP, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/GFW.list, tag=GFWList, force-policy=国外网址, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/Netflix.list, tag=Netflix,force-policy=Netflix, enabled=true
+
+#自定义图标_设置
+[policy]
+static=国内网站, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/1.png
+static=国内IP, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/2.png
+static=国外网址, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
+static=Apple, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
+static=Netflix, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
+static=去广告, direct,proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
+static=二维码,direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/VX.png
+
+;static=policy-name-1, Sample-A, Sample-B, Sample-C
+;available=policy-name-2, Sample-A, Sample-B, Sample-C
+;round-robin=policy-name-3, Sample-A, Sample-B, Sample-C
+;ssid=policy-name-4, Sample-A, Sample-B, LINK_22E171:Sample-B, LINK_22E172:Sample-C
+
+# Params "tag" and "enabled" are optional.
+# The default sync interval for all kinds of remote resources is 24*60*60 seconds.
 
 
 #自定义Rewrite规则 订阅地址_设置
