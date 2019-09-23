@@ -47,10 +47,10 @@ https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_SS.txt, tag=LS
 
 
 #自定义策略组_设置 static静态策略，available健康检查策略，round-robin负载均衡策略
-static=A-SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
-available=B-SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
-round-robin=C-SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
-;ssid=D-name-4, Sample-A, Sample-B, LINK_22E171:Sample-B, LINK_22E172:Sample-C
+static=policy-SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
+available=policy-SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
+round-robin=policy-SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
+;ssid=policy-name-4, Sample-A, Sample-B, LINK_22E171:Sample-B, LINK_22E172:Sample-C
 
 
 #自定义分流规则 订阅地址_设置
