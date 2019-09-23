@@ -34,20 +34,11 @@ server=/*.127.net/119.29.29.29
 server=/*.netease.com/119.29.29.29
 server=/*.mi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
-;server=/*testflight.apple.com/23.76.66.98
-;server=8.8.8.8
-;server=/example1.com/8.8.4.4
-;server=/*.example2.com/223.5.5.5
-;server=/example4.com/[2001:4860:4860::8888]:53
-;address=/example5.com/192.168.16.18
-;address=/example6.com/[2001:8d3:8d3:8d3:8d3:8d3:8d3:8d3]
 
-#
 # static policy points to the server in candidates you manually selected.
 # available policy points to the first available server in candidates based on server_check_url(concurrent url latency test will be immediately launched when the policy has been triggered and the policy result is unavailable).
 # round-robin policy points to the next server in candidates for next connection.
 # ssid policy points to the server depending on the network environment.
-
 
 #自定义图标_设置
 [policy]
@@ -97,11 +88,8 @@ https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrit
 http://cloudcompute.lbyczf.com/quanx-rewrite, tag=lhie1复写, enabled=true
 
 
+#本地过滤_设置
 [filter_local]
-;user-agent, ?abc*, proxy
-;host, www.google.com, proxy
-;host-keyword, adsite, reject
-;host-suffix, googleapis.com, proxy
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
@@ -110,9 +98,7 @@ ip-cidr, 224.0.0.0/24, direct
 geoip, cn, direct
 final,   proxy
 
-
 [rewrite_local]
-
 [mitm]
 ;skip_validating_cert = false
 ;force_sni_domain_name = false
