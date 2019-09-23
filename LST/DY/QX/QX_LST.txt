@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/conf
 [policy]
 static=国内网站, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/1.png
 static=国内IP, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/2.png 
-round-robin=国外网址,proxy,手动选择,自动选择,负载均衡, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
+static=国外网址,proxy,手动选择,自动选择,负载均衡, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
 static=Apple, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
 static=Netflix, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
 static=去广告, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
