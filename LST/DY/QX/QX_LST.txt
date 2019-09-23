@@ -37,7 +37,6 @@ server=/*.xiaomi.com/119.29.29.29
 
 #自定义订阅地址 SS SSR _设置
 [server_remote]
-https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_SS.txt, tag=LST订阅节点,force-policy=节点, enabled=true
 https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_SS.txt, tag=LST订阅, enabled=true
 
 
