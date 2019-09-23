@@ -64,7 +64,7 @@ static=国内IP, direct, img-url= https://raw.githubusercontent.com/lushutao/TT/
 static=国外网址,proxy,手动选择,自动选择,负载均衡, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/3.png
 static=Apple, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/4.png
 static=Netflix, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/5.png
-static=去广告, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
+static=去广告, direct, REJECT, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/S.png
 static=二维码,direct, img-url= https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_TU/VX.png
 
 #自定义策略组_设置 static静态策略，available健康检查策略，round-robin负载均衡策略
