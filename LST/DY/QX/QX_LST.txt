@@ -71,7 +71,7 @@ static=二维码,direct, img-url= https://raw.githubusercontent.com/lushutao/TT/
 static=手动选择, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
 available=自动选择, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
 round-robin=负载均衡, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
-ssid=DDID, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, YJ_VPN:自动选择, MI_Tao:负载均衡
+ssid=DDID, 手动选择, 二维码, YJ_VPN:自动选择, MI_Tao:负载均衡
 
 
 #自定义Rewrite规则 订阅地址_设置
