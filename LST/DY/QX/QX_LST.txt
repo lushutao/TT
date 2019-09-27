@@ -78,6 +78,7 @@ round-robin=负载均衡, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_�
 [rewrite_remote]
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag=神机复写规则, enabled=true
 http://cloudcompute.lbyczf.com/quanx-rewrite, tag=lhie1复写, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=群里面, enabled=true
 
 
 #本地过滤_设置
