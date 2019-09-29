@@ -66,12 +66,11 @@ static=Apple, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao
 static=Netflix, proxy, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/5.png
 static=去广告, direct, REJECT, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/S.png
 static=二维码,direct, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/VX.png
-#static=负载均衡,direct, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/6.png
 
 #自定义策略组_设置 static静态策略，available健康检查策略，round-robin负载均衡策略
 #static=手动选择, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
 #available=自动选择, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
-round-robin=负载均衡, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰
+round-robin=负载均衡, SS_LSTUS_私人专线_🇺🇸, SS_QT04_私人专线_🇭🇰, SS_LSTHK_私人专线_🇭🇰, SS_QT05_私人专线_🇭🇰, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/6.png
 #ssid=DDID, 手动选择, 二维码, YJ_VPN:自动选择, MI_Tao:负载均衡
 
 
