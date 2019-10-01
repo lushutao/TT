@@ -54,7 +54,7 @@ https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/AppleService.list, tag=Apple,force-policy=Apple, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/CNDomain.list, tag=国内域名,force-policy=国内网站, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/CNIP.list, tag=国内IP,force-policy=国内IP, enabled=true
-https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/GFW.list, tag=GFWList, force-policy=国外网址, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=GFWList, force-policy=国外网址, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/Netflix.list, tag=Netflix,force-policy=Netflix, enabled=true
 
 #自定义图标_设置
