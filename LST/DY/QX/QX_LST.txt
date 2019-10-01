@@ -53,14 +53,14 @@ https://raw.githubusercontent.com/lushutao/TT/master/LST/DY/QX/QX_SS.txt, tag=LS
 
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/AppleService.list, tag=Apple,force-policy=Apple, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=国内域名,force-policy=国内网站, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list, tag=国内Tv,force-policy=国内TV, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/YouTube.list, tag=YouTube,force-policy=YouTube, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/GFW.list, force-policy=国外网址, enabled=true
 https://raw.githubusercontent.com/XinSSS/Conf-for-Surge-Shadowrocket/master/configFileHere/Quantumult_RULELIST/Netflix.list, tag=Netflix,force-policy=Netflix, enabled=true
 
 #自定义图标_设置
 [policy]
 static=国内网站, direct, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/1.png
-static=国内TV, direct, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/2.png 
+static=YouTube, proxy, 负载均衡, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/2.png 
 static=国外网址,proxy, 负载均衡, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/3.png
 static=Apple, direct, proxy, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/4.png
 static=Netflix, proxy, img-url= https://raw.githubusercontent.com/lushutao/TB/master/QX/QX_TU/5.png
