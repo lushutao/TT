@@ -13,27 +13,26 @@ external-controller: 127.0.0.1:9090
 secret: "lst"
 
 dns:
-  enable: False
+  enable: true
   ipv6: False
   listen: 127.0.0.1:53
   enhanced-mode: fake-ip
   nameserver:
-     - 114.114.114.114
      - 119.29.29.29
      - 223.5.5.5
      
 Proxy:
  #V2ray 系列
-- { name: "V2_LST_🇭🇰", type: vmess, server: 193.110.201.156, port: 38171, uuid: 62e7017a-57aa-4397-c424-20bc2d9f84ca, alterId: 64, cipher: Auto, network: ws, ws-path: /abc/123 }
-- { name: "V2_LST_BWG_🇺🇸", type: vmess, server: 67.230.177.112, port: 19177, uuid: 438e707e-702d-461e-b908-e0ac7cf9c744, alterId: 64, cipher: Auto }
-- { name: "V2_A+_🇭🇰", type: vmess, server: 103.117.103.26, port: 13143, uuid: efeb762c-db41-4bca-822a-1a166fedec1a, alterId: 64, cipher: Auto }
-- { name: "V2_QT05_🇭🇰", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: Auto }
+- { name: "LST_合租_🇭🇰", type: vmess, server: 193.110.201.156, port: 50044, uuid: d152ec6c-15f7-4e35-cd91-e81aa92cb178, alterId: 64, cipher: Auto }
+- { name: "LST_合租_🇺🇸", type: vmess, server: 205.210.165.189, port: 28444, uuid: 5eea6a77-e264-45d4-f58d-d29cb6f209ee, alterId: 64, cipher: Auto }
+- { name: "LST_BWG_🇺🇸", type: vmess, server: 67.230.177.112, port: 26956, uuid: cc4d6fc0-d7b8-4932-844a-8ce470ecfad8, alterId: 64, cipher: Auto }
+- { name: "LST_QT05_🇭🇰", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: Auto }
 
 # socks5 系列
 #- { name: "BWG_QT01", type: socks5, server: 104.224.175.181, port: 42570, username: "lst", password: "0011" }
 
- #SS 系列
-- { name: "SS_QT04_🇭🇰", type: ss, server: 103.135.249.3, port: 17774, cipher: chacha20, password: "VG0XH52WMA", udp: true }
+#-SS 系列
+#- { name: "SS_QT04_🇭🇰", type: ss, server: 103.135.249.3, port: 27774, cipher: AES-128-GCM, password: "VG0XH52WMA", udp: true }
 
 Proxy Group:
 # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
@@ -41,9 +40,9 @@ Proxy Group:
 # load-balance 可以使相同 eTLD 请求在同一条代理线路上   負載均衡
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 
-- { name: "Proxy", type: select, proxies: ["V2_LST_🇭🇰", "V2_LST_BWG_🇺🇸", "V2_A+_🇭🇰",  "V2_QT05_🇭🇰","SS_QT04_🇭🇰" ] }
-- { name: "Video🎥",type: select, proxies: ["V2_QT05_🇭🇰", "V2_LST_BWG_🇺🇸", "DIRECT"] }
-- { name: "不可描述",type: select, proxies: ["V2_LST_BWG_🇺🇸", "DIRECT"] }
+- { name: "Proxy", type: select, proxies: ["LST_合租_🇭🇰", "LST_合租_🇺🇸", "LST_BWG_🇺🇸",  "LST_QT05_🇭🇰"] }
+- { name: "Video🎥",type: select, proxies: ["LST_合租_🇭🇰", "LST_合租_🇺🇸", "LST_BWG_🇺🇸",  "LST_QT05_🇭🇰", "DIRECT"] }
+- { name: "不可描述",type: select, proxies: ["LST_合租_🇺🇸","LST_BWG_🇺🇸", "DIRECT"] }
 
 #LST/VPN 自定义系列
  #DomainSuffix：域名后缀匹配
