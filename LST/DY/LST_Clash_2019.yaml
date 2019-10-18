@@ -60,6 +60,7 @@ Rule:
 - DOMAIN-SUFFIX,orsoon.com,DIRECT
 - DOMAIN-SUFFIX,javjunkies.com,不可描述
 - DOMAIN,mtalk.google.com,DIRECT
+- DOMAIN,mtalk.nutaku.net,REJECT
 
 #解锁网易云音乐
 - DOMAIN-SUFFIX,163.com, 解锁🎶
