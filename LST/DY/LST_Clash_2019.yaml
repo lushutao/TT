@@ -27,6 +27,9 @@ Proxy:
 - { name: "LST_合租_🇺🇸", type: vmess, server: 205.210.165.189, port: 28444, uuid: 5eea6a77-e264-45d4-f58d-d29cb6f209ee, alterId: 64, cipher: Auto }
 - { name: "LST_BWG_🇺🇸", type: vmess, server: 67.230.177.112, port: 26956, uuid: cc4d6fc0-d7b8-4932-844a-8ce470ecfad8, alterId: 64, cipher: Auto }
 - { name: "LST_QT05_🇭🇰", type: vmess, server: 193.110.201.244, port: 41497, uuid: e7352419-6f10-49b0-978a-1bd957aaba14, alterId: 64, cipher: Auto }
+- { name: "LST_QT04_🇭🇰", type: vmess, server: 103.135.249.3, port: 11203, uuid: 6524a16d-4b50-452a-e3d4-0dcb6cc87f04, alterId: 69, cipher: Auto }
+- { name: "LST_QTA+_🇭🇰", type: vmess, server: 103.117.103.26, port: 11203, uuid: 67ee7c21-b473-465b-ea55-ccbe4edf639e, alterId: 69, cipher: Auto }
+
 - { name: "UnblockNeteaseMusic", type: http, server: 205.210.165.189, port: 6626}
 
 # socks5 系列
@@ -41,7 +44,7 @@ Proxy Group:
 # load-balance 可以使相同 eTLD 请求在同一条代理线路上   負載均衡
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 
-- { name: "PROXY", type: load-balance, proxies: ["LST_合租_🇭🇰", "LST_合租_🇺🇸", "LST_BWG_🇺🇸",  "LST_QT05_🇭🇰"] , url: "http://www.gstatic.com/generate_204", interval: 300}
+- { name: "PROXY", type: select, proxies: ["LST_合租_🇭🇰", "LST_合租_🇺🇸", "LST_BWG_🇺🇸",  "LST_QT04_🇭🇰", "LST_QT05_🇭🇰", "LST_QTA+_🇭🇰"] , url: "http://www.gstatic.com/generate_204", interval: 300}
 
 # 自定义模式
 - { name: "解锁🎶", type: select, proxies: ["UnblockNeteaseMusic", "DIRECT"]}
