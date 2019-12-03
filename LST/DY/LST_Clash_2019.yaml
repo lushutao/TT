@@ -48,7 +48,7 @@ Proxy Group:
 
 # 自定义模式
 - { name: "解锁🎶", type: select, proxies: ["UnblockNeteaseMusic", "DIRECT"]}
-- { name: "不可描述",type: select, proxies: ["LST_合租_🇺🇸","LST_BWG_🇺🇸", "DIRECT"] }
+- { name: "不可描述",type: select, proxies: ["LST_BWG_🇺🇸", "DIRECT"] }
 
 #LST/VPN 自定义系列
  #DomainSuffix：域名后缀匹配
